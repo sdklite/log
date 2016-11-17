@@ -79,6 +79,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.10.3</version>
         <configuration>
+          <sourcepath>${JAVA_HOME}/src.zip</sourcepath>
           <show>protected</show>
           <nohelp>true</nohelp>
           <sourceFileExcludes>
