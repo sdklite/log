@@ -79,7 +79,7 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.10.3</version>
         <configuration>
-          <sourcepath>${JAVA_HOME}/src.zip:${basedir}/src/main/java:${basedir}/src/main/java-templates</sourcepath>
+          <sourcepath>${JAVA_HOME}/src.zip:${basedir}/src/main/java</sourcepath>
           <show>protected</show>
           <nohelp>true</nohelp>
           <sourceFileExcludes>
