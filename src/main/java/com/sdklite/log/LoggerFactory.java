@@ -13,8 +13,6 @@ public class LoggerFactory {
     /**
      * Obtain a logger
      * 
-     * @param tag
-     *            The tag of logger
      * @return a logger instance
      */
     public static final Logger getLogger() {
