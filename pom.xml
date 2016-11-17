@@ -26,4 +26,13 @@
     <system>GitHub Issues</system>
     <url>https://github.com/sdklite/log/issues</url>
   </issueManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>android</artifactId>
+      <version>4.1.1.4</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>  
 </project>
