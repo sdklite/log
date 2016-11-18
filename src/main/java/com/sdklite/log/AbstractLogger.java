@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.text.FieldPosition;
 import java.text.MessageFormat;
 
+import com.sdklite.log.bind.LoggerBinder;
+
 /**
  * An abstraction of generic logger
  * 
@@ -16,7 +18,7 @@ public abstract class AbstractLogger implements Logger {
 
     private static final StackTraceElement UNKNOWN_STRACE_TRACE = new StackTraceElement("unknown", "unknown", "unknown", -1);
 
-    protected Level level = Build.VERSION.endsWith("-SNAPSHOT") ? Level.TRACE : Level.OFF;
+    protected Level level = LoggerBinder.getInstance().getDefaultLevel();
 
     /**
      * Default constructor
