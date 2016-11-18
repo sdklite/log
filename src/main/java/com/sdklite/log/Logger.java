@@ -19,6 +19,11 @@ public interface Logger extends Appendable {
     public Level getLevel();
 
     /**
+     * Sets the level of this logger
+     */
+    public void setLevel(final Level level);
+
+    /**
      * Prints the specified message
      * 
      * @param level

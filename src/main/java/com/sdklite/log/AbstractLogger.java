@@ -16,6 +16,8 @@ public abstract class AbstractLogger implements Logger {
 
     private static final StackTraceElement UNKNOWN_STRACE_TRACE = new StackTraceElement("unknown", "unknown", "unknown", -1);
 
+    protected Level level = Build.VERSION.endsWith("-SNAPSHOT") ? Level.TRACE : Level.OFF;
+
     /**
      * Default constructor
      */
@@ -39,7 +41,16 @@ public abstract class AbstractLogger implements Logger {
 
     @Override
     public Level getLevel() {
-        return Level.OFF;
+        return this.level;
+    }
+
+    @Override
+    public void setLevel(final Level level) {
+        if (null == level) {
+            throw new IllegalArgumentException("level is null");
+        }
+
+        this.level = level;
     }
 
     @Override
