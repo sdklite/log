@@ -91,7 +91,7 @@ public class ConsoleLogger extends AbstractLogger {
 
 ### GitHub
 
-The distribution binary is available on [GitHub](https://github.com/sdklite/log/releases).
+Download latest source code from [here](https://github.com/sdklite/log/releases/latest).
 
 ### Maven
 
