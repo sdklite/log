@@ -18,7 +18,7 @@ public abstract class AbstractLogger implements Logger {
 
     private static final StackTraceElement UNKNOWN_STRACE_TRACE = new StackTraceElement("unknown", "unknown", "unknown", -1);
 
-    protected Level level = LoggerBinder.getInstance().getDefaultLevel();
+    protected Level level;
 
     /**
      * Default constructor
@@ -43,6 +43,10 @@ public abstract class AbstractLogger implements Logger {
 
     @Override
     public Level getLevel() {
+        if (null == this.level) {
+            return LoggerBinder.getInstance().getDefaultLevel();
+        }
+
         return this.level;
     }
 
