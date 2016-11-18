@@ -11,6 +11,11 @@ public class TestLogger {
             public Logger println(Level level, String msg, Object... args) {
                 return this;
             }
+
+            @Override
+            public String getName() {
+                return "test";
+            }
         };
 
         System.out.println(logger.format("Exception occurred: {0}", new RuntimeException()));

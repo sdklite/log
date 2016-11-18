@@ -9,7 +9,7 @@ public class LoggerBinder {
         throw new RuntimeException("Stub!");
     }
 
-    public Logger getLogger() {
+    public Logger getLogger(final String name) {
         throw new RuntimeException("Stub!");
     }
 

@@ -11,12 +11,23 @@ import com.sdklite.log.bind.LoggerBinder;
 public class LoggerFactory {
 
     /**
-     * Obtain a logger
+     * Obtain a logger with class
      * 
-     * @return a logger instance
+     * @param clazz
+     *            The class for logging
+     * @return an instance of logger
      */
-    public static final Logger getLogger() {
-        final Logger logger = LoggerBinder.getInstance().getLogger();
+    public static Logger getLogger(final Class<?> clazz) {
+        return getLogger(clazz.getName());
+    }
+
+    /**
+     * Obtain a logger with name
+     * 
+     * @return an instance of logger
+     */
+    public static final Logger getLogger(final String name) {
+        final Logger logger = LoggerBinder.getInstance().getLogger(name);
         if (null != logger) {
             return logger;
         }

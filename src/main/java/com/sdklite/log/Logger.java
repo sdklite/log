@@ -9,6 +9,11 @@ package com.sdklite.log;
 public interface Logger extends Appendable {
 
     /**
+     * Returns the name of this logger
+     */
+    public String getName();
+
+    /**
      * Returns the level
      */
     public Level getLevel();

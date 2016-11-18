@@ -16,4 +16,10 @@ class StandardLogger extends AbstractLogger {
     String format(final Level level, final String msg, final Object... args) {
         return format(new StringBuilder(inferSourceCodeLocation()).append(" ").append(level), msg, args);
     }
+
+    @Override
+    public String getName() {
+        return "standard";
+    }
+
 }

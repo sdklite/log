@@ -31,4 +31,9 @@ class LogcatLogger extends AbstractLogger {
         return this;
     }
 
+    @Override
+    public String getName() {
+        return "logcat";
+    }
+
 }
