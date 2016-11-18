@@ -16,6 +16,10 @@ public class LoggerBinder {
         throw new RuntimeException("Stub!");
     }
 
+    private LoggerBinder() {
+        throw new RuntimeException("Stub!");
+    }
+
     public Logger getLogger(final String name) {
         throw new RuntimeException("Stub!");
     }
