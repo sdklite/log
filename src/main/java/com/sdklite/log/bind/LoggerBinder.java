@@ -12,6 +12,9 @@ import com.sdklite.log.Logger;
  */
 public class LoggerBinder {
 
+    /**
+     * Returns the biner instance
+     */
     public static final LoggerBinder getInstance() {
         throw new RuntimeException("Stub!");
     }
@@ -20,10 +23,20 @@ public class LoggerBinder {
         throw new RuntimeException("Stub!");
     }
 
+    /**
+     * Obtain a logger with the specified name
+     * 
+     * @param name
+     *            The name of logger
+     * @return an instance of logger
+     */
     public Logger getLogger(final String name) {
         throw new RuntimeException("Stub!");
     }
 
+    /**
+     * Returns the default log level
+     */
     public Level getDefaultLevel() {
         throw new RuntimeException("Stub!");
     }
